@@ -29,10 +29,10 @@ rm /tmp/nwjs-v0.48.4-win-x64.zip
 echo "Copying launch script."
 cp ./storage/Game.sh "$XDG_DATA_HOME/nwjs-v0.48.4-win-x64/Game.sh"
 
+echo "Creating wine prefix"
+wine hostname
+
 echo "Installing DXVK."
 ./storage/dxvk-2.4/setup_dxvk.sh install
-
-echo "Installing VKD3D."
-./storage/vkd3d-proton-2.13/setup_vkd3d_proton.sh install
 
 echo "Finished."
